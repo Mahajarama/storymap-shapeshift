@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid;
+    position: relative;
+}
+
+.container > div {
+    border: 1px dashed;
+    background: white;
+    height: 100px;
+    position: absolute;
+    width: 170px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.container > div[data-ss-colspan='2'] { width: 260px; }
+.container > div[data-ss-colspan="3"] { width: 350px; }
+.container > div[data-ss-colspan="4"] { width: 440px; }
+
+.container .ss-placeholder-child {
+    background: transparent;
+    border: 1px dashed red;
+}
